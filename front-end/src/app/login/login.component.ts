@@ -29,11 +29,38 @@ export class LoginComponent implements OnInit {
   }
 
   public authorize() {
-    this.sendAuthorizationRequest().subscribe(res => {
-      this.error = undefined;
-      this._router.navigate(['notification']);
-    }, error => {
-      this.error = error.message;
-    })
+    if(this.isValid(true)) {
+      this.sendAuthorizationRequest().subscribe(res => {
+        this.error = undefined;
+        this._router.navigate(['notification']);
+      }, error => {
+        this.error = error.message;
+      })
+    }
   }
+
+  public login() {
+    if(this.isValid(false)) {
+
+    }
+  }
+
+  public isValid(isAuthorisation: boolean) {
+    if(this.user.email.length < 4) {
+      this.error = "Wrong user email";
+      return false;
+    } else if(isAuthorisation && this.user.password.length < 4) {
+      this.error = "Wrong user password";
+      return false;
+    } else if(isAuthorisation && this.user.repeatedPassword.length < 4 || this.user.repeatedPassword != this.user.password) {
+      this.error = "Wrong repeated password";
+      return false;
+    } else if(this.user.name.length < 4) {
+      this.error = "Wrong user name";
+      return false;
+    }
+
+    return true;
+  }
+
 }
