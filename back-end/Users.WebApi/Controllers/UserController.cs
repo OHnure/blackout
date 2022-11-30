@@ -7,6 +7,7 @@ using AutoMapper;
 
 namespace Users.WebApi.Controllers
 {
+    [Route("api/[controller]")]
     public class UserController : BaseController
     {
         private readonly IMapper _mapper;

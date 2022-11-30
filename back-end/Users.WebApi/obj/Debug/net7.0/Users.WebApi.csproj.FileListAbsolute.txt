@@ -69,3 +69,5 @@ D:\testProjects\university\back-end\Users.WebApi\obj\Debug\net7.0\ref\Users.WebA
 D:\testProjects\university\back-end\Users.WebApi\bin\Debug\net7.0\Utils.dll
 D:\testProjects\university\back-end\Users.WebApi\bin\Debug\net7.0\Utils.pdb
 D:\testProjects\university\back-end\Users.WebApi\bin\Debug\net7.0\MySql.Data.EntityFrameworkCore.dll
+D:\testProjects\university\back-end\Users.WebApi\bin\Debug\net7.0\FluentValidation.dll
+D:\testProjects\university\back-end\Users.WebApi\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll

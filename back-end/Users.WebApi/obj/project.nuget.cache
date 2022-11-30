@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "dagzUgCHE7srcBIZSyQdqRgtJyr/w1pux6ZUl1JdAC9WA1lusSIuqbqXm1bOm1hAU0RVhYD4pHri/BVeP98tBg==",
+  "dgSpecHash": "vTuZSgKi3Q25btBT8hovbe0kHLQZHVkn5ReU+GEsu4aDHKVgQm/o139nQsDSEuu1W0R95mkMpg+eoOef9EJMIA==",
   "success": true,
   "projectFilePath": "D:\\testProjects\\university\\back-end\\Users.WebApi\\Users.WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\fluentvalidation\\11.4.0\\fluentvalidation.11.4.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.4.0\\fluentvalidation.dependencyinjectionextensions.11.4.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\google.protobuf\\3.19.4\\google.protobuf.3.19.4.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\k4os.compression.lz4\\1.2.6\\k4os.compression.lz4.1.2.6.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\k4os.compression.lz4.streams\\1.2.6\\k4os.compression.lz4.streams.1.2.6.nupkg.sha512",

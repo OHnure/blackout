@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "NBGCEfi/HfAbcPmhjoIZgbI2dkJowjWok5h4CVaZS/+0/ot2v3iSSASIC5raci011BvEvEpNfziA/75oXLMa+A==",
+  "dgSpecHash": "1qdKVoVeZ+uLssLXhySIJRKztpnMGp/CFiMk3s/MGB0qobzqgjDrpPL1TCtOGZpg95vUwogGbwkQZ10F6FO5ng==",
   "success": true,
   "projectFilePath": "D:\\testProjects\\university\\back-end\\Users.Persistance\\Users.Persistance.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\fluentvalidation\\11.4.0\\fluentvalidation.11.4.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.4.0\\fluentvalidation.dependencyinjectionextensions.11.4.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\google.protobuf\\3.19.4\\google.protobuf.3.19.4.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\k4os.compression.lz4\\1.2.6\\k4os.compression.lz4.1.2.6.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\k4os.compression.lz4.streams\\1.2.6\\k4os.compression.lz4.streams.1.2.6.nupkg.sha512",

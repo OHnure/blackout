@@ -9,6 +9,7 @@ using Users.Application.Interfaces;
 using Users.Persistance;
 using Microsoft.EntityFrameworkCore;
 using MySql.Data.EntityFrameworkCore.Extensions;
+using Users.WebApi.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 //public IConfiguration Configuration { get; }
@@ -58,6 +59,8 @@ using (var scope = builder.Services.BuildServiceProvider().CreateScope())
         
     }
 }
+
+app.UseCustomExceptionHandler();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

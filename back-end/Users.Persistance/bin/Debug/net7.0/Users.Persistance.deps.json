@@ -25,6 +25,26 @@
           }
         }
       },
+      "FluentValidation/11.4.0": {
+        "runtime": {
+          "lib/net7.0/FluentValidation.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.4.0.0"
+          }
+        }
+      },
+      "FluentValidation.DependencyInjectionExtensions/11.4.0": {
+        "dependencies": {
+          "FluentValidation": "11.4.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.4.0.0"
+          }
+        }
+      },
       "Google.Protobuf/3.19.4": {
         "runtime": {
           "lib/net5.0/Google.Protobuf.dll": {
@@ -418,6 +438,8 @@
       "Users.Application/1.0.0": {
         "dependencies": {
           "AutoMapper": "12.0.0",
+          "FluentValidation": "11.4.0",
+          "FluentValidation.DependencyInjectionExtensions": "11.4.0",
           "MediatR": "11.1.0",
           "MediatR.Extensions.Microsoft.DependencyInjection": "11.0.0",
           "Users.Domain": "1.0.0"
@@ -449,6 +471,20 @@
       "sha512": "sha512-0Rmg0zI5AFu1O/y//o9VGyhxKjhggWpk9mOA1tp0DEVx40c61bs+lnQv+0jUq8XbniF7FKgIVvI1perqiMtLrA==",
       "path": "automapper/12.0.0",
       "hashPath": "automapper.12.0.0.nupkg.sha512"
+    },
+    "FluentValidation/11.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WZJyrNf4suiaI6avVG32W9kmBLC3+V5rDTcLeRJjeU4tDmTyDIOz1459DzCKppXs34YpZg9rCUzDY3M4XxG7Ug==",
+      "path": "fluentvalidation/11.4.0",
+      "hashPath": "fluentvalidation.11.4.0.nupkg.sha512"
+    },
+    "FluentValidation.DependencyInjectionExtensions/11.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-iZXtoDqfRnggHwIbFWnK1sFs3KlTadH5ezNDiXz411OSkUNowBRboaZBcSvx4gEot7CNZdoReUKWYJwow2+mbg==",
+      "path": "fluentvalidation.dependencyinjectionextensions/11.4.0",
+      "hashPath": "fluentvalidation.dependencyinjectionextensions.11.4.0.nupkg.sha512"
     },
     "Google.Protobuf/3.19.4": {
       "type": "package",
