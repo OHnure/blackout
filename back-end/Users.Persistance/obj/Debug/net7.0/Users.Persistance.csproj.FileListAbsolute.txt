@@ -1,0 +1,17 @@
+D:\testProjects\university\back-end\Users.Persistance\obj\Debug\net7.0\Users.Persistance.csproj.AssemblyReference.cache
+D:\testProjects\university\back-end\Users.Persistance\obj\Debug\net7.0\Users.Persistance.GeneratedMSBuildEditorConfig.editorconfig
+D:\testProjects\university\back-end\Users.Persistance\obj\Debug\net7.0\Users.Persistance.AssemblyInfoInputs.cache
+D:\testProjects\university\back-end\Users.Persistance\obj\Debug\net7.0\Users.Persistance.AssemblyInfo.cs
+D:\testProjects\university\back-end\Users.Persistance\obj\Debug\net7.0\Users.Persistance.csproj.CoreCompileInputs.cache
+D:\testProjects\university\back-end\Users.Persistance\bin\Debug\net7.0\Users.Persistance.deps.json
+D:\testProjects\university\back-end\Users.Persistance\bin\Debug\net7.0\Users.Persistance.dll
+D:\testProjects\university\back-end\Users.Persistance\bin\Debug\net7.0\Users.Persistance.pdb
+D:\testProjects\university\back-end\Users.Persistance\bin\Debug\net7.0\Users.Application.dll
+D:\testProjects\university\back-end\Users.Persistance\bin\Debug\net7.0\Users.Domain.dll
+D:\testProjects\university\back-end\Users.Persistance\bin\Debug\net7.0\Users.Application.pdb
+D:\testProjects\university\back-end\Users.Persistance\bin\Debug\net7.0\Users.Domain.pdb
+D:\testProjects\university\back-end\Users.Persistance\obj\Debug\net7.0\Users.Persistance.csproj.CopyComplete
+D:\testProjects\university\back-end\Users.Persistance\obj\Debug\net7.0\Users.Persistance.dll
+D:\testProjects\university\back-end\Users.Persistance\obj\Debug\net7.0\refint\Users.Persistance.dll
+D:\testProjects\university\back-end\Users.Persistance\obj\Debug\net7.0\Users.Persistance.pdb
+D:\testProjects\university\back-end\Users.Persistance\obj\Debug\net7.0\ref\Users.Persistance.dll

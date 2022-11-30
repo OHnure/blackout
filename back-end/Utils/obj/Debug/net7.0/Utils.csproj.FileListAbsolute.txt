@@ -1,0 +1,12 @@
+D:\testProjects\university\back-end\Utils\bin\Debug\net7.0\Utils.deps.json
+D:\testProjects\university\back-end\Utils\bin\Debug\net7.0\Utils.dll
+D:\testProjects\university\back-end\Utils\bin\Debug\net7.0\Utils.pdb
+D:\testProjects\university\back-end\Utils\obj\Debug\net7.0\Utils.csproj.AssemblyReference.cache
+D:\testProjects\university\back-end\Utils\obj\Debug\net7.0\Utils.GeneratedMSBuildEditorConfig.editorconfig
+D:\testProjects\university\back-end\Utils\obj\Debug\net7.0\Utils.AssemblyInfoInputs.cache
+D:\testProjects\university\back-end\Utils\obj\Debug\net7.0\Utils.AssemblyInfo.cs
+D:\testProjects\university\back-end\Utils\obj\Debug\net7.0\Utils.csproj.CoreCompileInputs.cache
+D:\testProjects\university\back-end\Utils\obj\Debug\net7.0\Utils.dll
+D:\testProjects\university\back-end\Utils\obj\Debug\net7.0\refint\Utils.dll
+D:\testProjects\university\back-end\Utils\obj\Debug\net7.0\Utils.pdb
+D:\testProjects\university\back-end\Utils\obj\Debug\net7.0\ref\Utils.dll
