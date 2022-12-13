@@ -1,1 +1,59 @@
-
+<div class="container">
+  <div class="row mt-5 mb-3">
+    <div class="col-6">
+      <h2>
+        Notify about blackout
+      </h2>
+    </div>
+    <div class="col-6 text-right">
+      <button class="btn btn-light btn-outline-dark" (click)="goToProfilePage()">Edit profile</button>
+      <button class="btn btn-dark ms-5" (click)="logout()">Logout</button>
+    </div>
+  </div>
+  <div *ngIf="error" class="alert alert-danger">
+    {{error}}
+  </div>
+  <div *ngIf="success" class="alert alert-success">
+    {{success}}
+  </div>
+  <div class="row mt-5">
+    <div class="col-6">
+      <div class="card">
+        <div class="card-header">
+          <h4>Notification message</h4>
+        </div>
+        <div class="card-body">
+          <label for="from">Blackout expected start</label>
+          <input type="email" name="from" required="required" id="from" class="form-control"
+                 [(ngModel)]="from">
+          <label for="to">Blackout expected end</label>
+          <input type="email" name="to" required="required" id="to" class="form-control"
+                 [(ngModel)]="to">
+          <label for="message">Message</label>
+          <textarea type="email" name="message" required="required" id="message" class="form-control"
+                    [(ngModel)]="message"></textarea>
+        </div>
+        <div class="card-footer">
+          <button class="btn btn-primary" (click)="notify()">Notify</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-6">
+      <h4>Users to notify:</h4>
+      <table class="table">
+        <thead class="thead-light">
+        <tr>
+          <th scope="col">User name</th>
+          <th scope="col">User email</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let user of users">
+          <td>{{user.name}}</td>
+          <td>{{user.email}}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

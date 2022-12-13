@@ -1,6 +1,6 @@
 export class UserVO {
 
-  id: number;
+  id: string | null;
   name: string;
   email: string;
   password: string;

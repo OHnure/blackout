@@ -8,6 +8,7 @@ import {NotificationComponent} from "./notification/notification.component";
 import {ProfileComponent} from "./profile/profile.component";
 import {HttpClientModule} from "@angular/common/http";
 import {FormsModule} from "@angular/forms";
+import {LoginGuard} from "./guard/loginGuard";
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import {FormsModule} from "@angular/forms";
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [LoginGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
