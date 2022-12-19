@@ -1,0 +1,14 @@
+D:\testProjects\university\back-end\Users.Domain\bin\Release\net7.0\Users.Domain.deps.json
+D:\testProjects\university\back-end\Users.Domain\bin\Release\net7.0\Users.Domain.runtimeconfig.json
+D:\testProjects\university\back-end\Users.Domain\bin\Release\net7.0\Users.Domain.dll
+D:\testProjects\university\back-end\Users.Domain\bin\Release\net7.0\Users.Domain.pdb
+D:\testProjects\university\back-end\Users.Domain\obj\Release\net7.0\Users.Domain.csproj.AssemblyReference.cache
+D:\testProjects\university\back-end\Users.Domain\obj\Release\net7.0\Users.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\testProjects\university\back-end\Users.Domain\obj\Release\net7.0\Users.Domain.AssemblyInfoInputs.cache
+D:\testProjects\university\back-end\Users.Domain\obj\Release\net7.0\Users.Domain.AssemblyInfo.cs
+D:\testProjects\university\back-end\Users.Domain\obj\Release\net7.0\Users.Domain.csproj.CoreCompileInputs.cache
+D:\testProjects\university\back-end\Users.Domain\obj\Release\net7.0\Users.Domain.dll
+D:\testProjects\university\back-end\Users.Domain\obj\Release\net7.0\refint\Users.Domain.dll
+D:\testProjects\university\back-end\Users.Domain\obj\Release\net7.0\Users.Domain.pdb
+D:\testProjects\university\back-end\Users.Domain\obj\Release\net7.0\Users.Domain.genruntimeconfig.cache
+D:\testProjects\university\back-end\Users.Domain\obj\Release\net7.0\ref\Users.Domain.dll

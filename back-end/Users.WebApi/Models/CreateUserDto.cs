@@ -29,8 +29,8 @@ namespace Users.WebApi.Models
                 opt => opt.MapFrom(note => note.Password))
                 .ForMember(noteVm => noteVm.City,
                 opt => opt.MapFrom(note => note.City))
-                .ForMember(noteVm => noteVm.Name,
-                opt => opt.MapFrom(note => note.Name));
+                .ForMember(noteVm => noteVm.Address,
+                opt => opt.MapFrom(note => note.Address));
         }
     }
 }

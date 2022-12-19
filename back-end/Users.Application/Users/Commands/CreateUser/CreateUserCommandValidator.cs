@@ -17,6 +17,9 @@ namespace Users.Application.Users.Commands.CreateUser
             createUserCommand.City).MaximumLength(32);
             RuleFor(createUserCommand =>
             createUserCommand.Address).MaximumLength(100);
+            RuleFor(createUserCommand =>
+            createUserCommand.RepeatedPassword).Equal(createUserCommand =>
+            createUserCommand.Password);
         }
     }
 }

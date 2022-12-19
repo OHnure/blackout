@@ -17,7 +17,9 @@ namespace Users.Application.Users.Commands.CreateUser
         public string Email { get; set; } = null!;
 
         public string Password { get; set; } = null!;
-        
+
+        public string RepeatedPassword { get; set; } = null!;
+
         public string? City { get; set; }
 
         public string? Address { get; set; }
