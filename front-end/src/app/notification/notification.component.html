@@ -23,11 +23,14 @@
           <h4>Notification message</h4>
         </div>
         <div class="card-body">
+          <label for="subject">Email subject</label>
+          <input type="text" name="subject" required="required" id="subject" class="form-control"
+                 [(ngModel)]="subject">
           <label for="from">Blackout expected start</label>
-          <input type="email" name="from" required="required" id="from" class="form-control"
+          <input type="text" name="from" required="required" id="from" class="form-control"
                  [(ngModel)]="from">
           <label for="to">Blackout expected end</label>
-          <input type="email" name="to" required="required" id="to" class="form-control"
+          <input type="text" name="to" required="required" id="to" class="form-control"
                  [(ngModel)]="to">
           <label for="message">Message</label>
           <textarea type="email" name="message" required="required" id="message" class="form-control"

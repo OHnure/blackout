@@ -25,13 +25,13 @@ export class LoginComponent implements OnInit {
   }
 
   public sendAuthorizationRequest ():Observable<any> {
-    return this.http.post(`https://50d2-93-77-69-167.eu.ngrok.io/api/UserLogin`,  this.user, {
+    return this.http.post(`https://623d-93-77-69-167.eu.ngrok.io/api/UserLogin`,  this.user, {
       headers: new HttpHeaders().set('Access-Control-Allow-Origin', '*'),
     })
   }
 
   public sendLoginRequest ():Observable<any> {
-    return this.http.post(`https://50d2-93-77-69-167.eu.ngrok.io/api/UserLogin/${this.user.email}/${this.user.password}`, {}, {
+    return this.http.post(`https://623d-93-77-69-167.eu.ngrok.io/api/UserLogin/${this.user.email}/${this.user.password}`, {}, {
       headers: new HttpHeaders().set('Access-Control-Allow-Origin', '*'),
     })
   }
@@ -39,7 +39,8 @@ export class LoginComponent implements OnInit {
   public authorize() {
     if(this.isValid(true)) {
       this.sendAuthorizationRequest().subscribe(res => {
-        this.error = undefined;
+        window.localStorage.setItem("id", res);
+        console.log(res);
         this._router.navigate(['notification']);
       }, error => {
         this.error = error?.error?.error;

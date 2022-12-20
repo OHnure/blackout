@@ -26,7 +26,7 @@ export class ProfileComponent {
 
   public getUserData () {
     let id = window.localStorage.getItem("id");
-    this.http.post(`https://50d2-93-77-69-167.eu.ngrok.io/api/UserLogin/${id}`, {},{
+    this.http.post(`https://623d-93-77-69-167.eu.ngrok.io/api/UserLogin/${id}`, {},{
       headers: new HttpHeaders().set('Access-Control-Allow-Origin', '*'),
     }).subscribe(res => {
       this.error = undefined;
@@ -40,7 +40,7 @@ export class ProfileComponent {
   public save() {
     if(this.isValid()) {
       this.user.id = window.localStorage.getItem("id");
-      this.http.put(`https://50d2-93-77-69-167.eu.ngrok.io/api/UserLogin`, this.user, {
+      this.http.put(`https://623d-93-77-69-167.eu.ngrok.io/api/UserLogin`, this.user, {
         headers: new HttpHeaders().set('Access-Control-Allow-Origin', '*'),
       }).subscribe(res => {
         this.error = undefined;

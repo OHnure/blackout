@@ -16,6 +16,8 @@ export class NotificationComponent {
   message: string | undefined;
   success: string | undefined;
   error: string | undefined;
+  subject: string | undefined;
+  currentUser: UserVO | undefined;
 
   constructor(private http: HttpClient, private _router: Router) {
   }
@@ -26,14 +28,28 @@ export class NotificationComponent {
     this.to = "";
     this.message = "";
     this.getUsersData();
+    this.users = [];
   }
 
   getUsersData() {
-    this.http.get(`https://50d2-93-77-69-167.eu.ngrok.io/api/UserLogin`, {
-      headers: new HttpHeaders().set('Access-Control-Allow-Origin', '*'),
+    this.http.post(`https://623d-93-77-69-167.eu.ngrok.io/api/UserLogin/getAllUsers`, {},{
+      headers: new HttpHeaders().set('Access-Control-Allow-Origin', '*').set("ngrok-skip-browser-warning", "*"),
     }).subscribe(data => {
-      this.users = data;
+
+      this.users = [];
+      // @ts-ignore
+      let users = data["users"].forEach(el => {
+        if(el.id != this.getId()) {
+          this.users.push(el);
+        } else {
+          this.currentUser = new UserVO(el);
+        }
+      });
     })
+  }
+
+  private getId() {
+    return window.localStorage.getItem("id");
   }
 
   goToProfilePage() {
@@ -46,10 +62,14 @@ export class NotificationComponent {
   }
 
   notify() {
-    this.http.post(`https://50d2-93-77-69-167.eu.ngrok.io/api/notify`, {
-      from: this.from,
-      to: this.to,
-      message: this.message
+    let body = `Hello! ${this.currentUser?.name} have a blackout from ${this.from || "unknown"} to ${this.to || "unknown"}. \n City - ${this.currentUser?.city || "unknown"} \n `;
+    body += this.message;
+    let defaultSubject = "Notification about Blackout from" + this.currentUser?.name;
+
+    this.http.post(`https://623d-93-77-69-167.eu.ngrok.io/api/Userlogin/sendMail`, {
+      id: this.getId(),
+      body: body,
+      subject: this.subject || defaultSubject
     }, {
       headers: new HttpHeaders().set('Access-Control-Allow-Origin', '*'),
     }).subscribe(data => {
