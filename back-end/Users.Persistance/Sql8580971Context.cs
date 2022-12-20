@@ -17,7 +17,7 @@ public partial class Sql8580971Context : DbContext, IUsersDbContext
     public virtual DbSet<User> Users { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseMySql("server=sql8.freemysqlhosting.net;port=3306;username=sql8580971;password=K9jSZ6uggi;database=sql8580971", ServerVersion.Parse("5.5.62-mysql"));
+        => optionsBuilder.UseMySql("server=localhost;port=3306;username=root;database=university", ServerVersion.Parse("5.5.62-mysql"));
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

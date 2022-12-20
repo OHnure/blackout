@@ -1,30 +1,47 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Net;
+using Microsoft.AspNetCore.Mvc;
 using Users.Application.Users.Queries.GetUserList;
 using Users.Application.Users.Queries.GetUserDetails;
 using Utils;
 using Users.Application.Users.Commands.CreateUser;
+using Users.Application.Users.Commands.UpdateUser;
 using AutoMapper;
+using System.Net.Mail;
+using Users.Application.Users.Commands.SendEmail;
+using Users.WebApi.Models;
 
 namespace Users.WebApi.Controllers
 {
     [Route("api/[controller]")]
-    public class UserController : BaseController
+    public class UserLoginController : BaseController
     {
         private readonly IMapper _mapper;
 
-        public UserController(IMapper mapper) => _mapper = mapper;
-        [HttpGet]
+        public UserLoginController(IMapper mapper) => _mapper = mapper;
+        [HttpPost("getAllUsers")]
         public async Task<ActionResult<UserListVm>> GetAll()
         {
             var query = new GetUserListQuery();
+            var vm = await Mediator.Send(query);            
+            return Ok(vm);
+        }
+
+        [HttpPost("{mail}/{password}")]
+        public async Task<ActionResult<UserDetailsVm>> Get(string mail, string password)
+        {
+            var query = new GetCutUserDetailsQuery
+            {
+                Email = mail,
+                Password = password
+            };
             var vm = await Mediator.Send(query);
             return Ok(vm);
         }
 
-        [HttpGet("{id}")]
+        [HttpPost("{id}")]
         public async Task<ActionResult<UserDetailsVm>> Get(int id)
         {
-            var query = new GetUserDetailsQuery
+            var query = new GetFullUserDetailsQuery
             {
                 Id = id
             };
@@ -39,5 +56,22 @@ namespace Users.WebApi.Controllers
             var vm = await Mediator.Send(command);
             return Ok(vm);
         }
-    }
+
+        [HttpPut]
+        public async Task<ActionResult<UserDetailsVm>> Update([FromBody] UpdateUserDto updateUserDto)
+        {
+            var command = _mapper.Map<UpdateUserCommand>(updateUserDto);
+            var vm = await Mediator.Send(command);
+            return Ok(vm);
+        }
+
+        [HttpPost("sendMail")]
+        public async Task<ActionResult> SendEmail([FromBody] SendMailDto sendMailDto)
+        {
+            var command = _mapper.Map<SendMailCommand>(sendMailDto);
+            var vm = await Mediator.Send(command);
+            return Ok(vm);
+        }
+
+    }    
 }
